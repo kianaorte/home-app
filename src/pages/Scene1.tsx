@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { DialogueBox } from "../components/DialogueBox";
 
 const welcomeDialogue = [{
@@ -18,17 +19,24 @@ const welcomeDialogue = [{
 
 ]
 
-const Scene1 = () => {
+export const Scene1 = () => {
+    const [visible, setVisible] = useState(true);
+    const removeElement = () => {
+        setVisible(false);
+    };
+    useEffect(() => {
+        welcomeDialogue.shift();
+        console.log('dialogue: ' + welcomeDialogue[0].text);
+    }, [visible]);
     return (
-        <div>
-            <DialogueBox textArray={welcomeDialogue} />
-            {/* {
-                welcomeDialogue.map((welcome, index) => (
+        <div onClick={removeElement}>
+            {
+                welcomeDialogue.map((welcome, index) => visible && (
                     <div key={index}>
-                        <DialogueBox textArray={welcome} />
+                        <DialogueBox text={welcomeDialogue[0].text} />
                     </div>
                 ))
-            } */}
+            }
         </div>
     );
 };
