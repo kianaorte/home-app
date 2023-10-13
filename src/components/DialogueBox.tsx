@@ -28,27 +28,6 @@ export const DialogueBox = ({ textArray, link }: DialogueProps) => {
                     </div>
                 ), textArray.shift()
                 )}
-            {/* <>
-            {
-                welcomeDialogue.map((welcome, index) => (
-                    <div key={index}>
-                        <DialogueBox text={welcome.text} />
-                    </div>
-                ))
-            }
-        </> */}
-            {/* {
-                visible && (
-
-                    <div className='container' onClick={removeElement}>
-                        <img src={DialogueContainer} width='100%' alt="box" />
-                        <p className="text">{textArray}</p>
-                    </div>
-                )} */}
-
-            {
-
-            }
         </>
     );
 }
