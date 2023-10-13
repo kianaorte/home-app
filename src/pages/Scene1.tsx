@@ -17,42 +17,42 @@ const welcomeDialogue = [{
 
 },
 {
-    text: "I drew all the art and wrote all the code..."
+    text: "I drew all the art and wrote all the code"
 },
 {
-    text: 'Even the dialogue you are reading now was handwritten by me!'
+    text: 'Even the dialogue you are reading now...'
+},
+{
+    text: 'was handwritten by me!'
 },
 {
     text: 'Everything was made from scratch so if its janky I apologize lololol'
+},
+{
+    text: 'I hope you have fun playing the game and u have an amazing day bb ❤️'
+},
+{
+    text: 'From your little sugar plum 👉👈'
 }
-
 ]
 
 export const Scene1 = () => {
     const [visible, setVisible] = useState(true);
+    const [text, setText] = useState(welcomeDialogue[0].text);
+    const [count, setCount] = useState(0);
     const removeElement = () => {
         setVisible(false);
+        setCount(count + 1);
     };
-
-    function removeFunction() {
-        if (welcomeDialogue.length > 1 && visible === false) {
-            welcomeDialogue.shift();
-            console.log('inside: ' + welcomeDialogue[0].text);
-            setVisible(true);
-        }
-    }
     useEffect(() => {
-        window.addEventListener("click", removeFunction);
-    }, [visible]);
+        setText(welcomeDialogue[count]?.text);
+        setVisible(true);
+    }, [text, count],);
     return (
         <div onClick={removeElement}>
-            {
-                welcomeDialogue.map((welcome, index) => visible && (
-                    <div key={index}>
-                        <DialogueBox text={welcomeDialogue[0].text} />
-                    </div>
-                ))
-            }
+            {visible && (
+                <DialogueBox text={text} />
+            )}
         </div>
     );
 };
