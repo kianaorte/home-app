@@ -18,12 +18,12 @@ export const DialogueBox = ({ textArray, link }: DialogueProps) => {
     return (
         <>
             { //iterate through array
-                textArray.map(() => visible && (
+                textArray.map((textMsg) => visible && (
                     <div>
                         {/* create card */}
                         <div className='container' onClick={removeElement}>
                             <img src={DialogueContainer} width='100%' alt="box" />
-                            <p className="text">{textArray[0].text}</p>
+                            <p className="text">{textMsg.text}</p>
                         </div>
                     </div>
                 ), textArray.shift()
