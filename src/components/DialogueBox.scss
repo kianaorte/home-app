@@ -1,14 +1,6 @@
-// .container {
-//     position: relative;
-//     overflow: hidden;
-//     text-overflow: clip;
-//     width: 100%;
-// }
-
 .container {
     position: absolute;
     margin-left: -250px;
-    /* very important for the image to be centered */
     left: 20%;
     bottom: 0px;
 }

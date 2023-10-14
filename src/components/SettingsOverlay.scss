@@ -1,0 +1,56 @@
+.overlay-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.popup {
+    top: 50%;
+    left: 30%;
+}
+
+.bluebtn-container {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-left: 220px;
+    padding-right: 100px;
+}
+
+.bluebtn-container2 {
+    position: absolute;
+    top: 50%;
+    left: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-left: 300px;
+    padding-right: 100px;
+}
+
+.settingstext {
+    color: black;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 18.5vw;
+}
+
+.settingstext2 {
+    color: black;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 24.5vw;
+}

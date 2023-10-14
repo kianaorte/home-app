@@ -3,8 +3,10 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Button } from './components/Button';
 import Home from './pages/Home';
 import Scene1 from './pages/Scene1';
+import { Settings } from './components/Settings';
 
 function App() {
+
   return (
     <div className="App">
       <div className='background-container'>
@@ -15,6 +17,7 @@ function App() {
 
         <Router>
           <Button text="hello" link="/scene1" />
+          <Settings />
           <div>
             <Routes>
               <Route path="/home" element={<Home />} />
