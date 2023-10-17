@@ -7,7 +7,6 @@ type DialogueProps = {
     link?: string
 }
 
-// eslint-disable-next-line react-hooks/rules-of-hooks
 export const DialogueBox = ({ text, link }: DialogueProps) => {
     return (
         <div className='container' >

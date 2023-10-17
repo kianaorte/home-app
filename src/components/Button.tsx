@@ -10,7 +10,6 @@ type ButtonProps = {
     hideOnClick: string
 }
 
-// eslint-disable-next-line react-hooks/rules-of-hooks
 export const Button = ({ text, link, hideOnClick }: ButtonProps) => {
     const [showMenu, setShowMenu] = useState(true);
 
