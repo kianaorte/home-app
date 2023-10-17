@@ -1,0 +1,22 @@
+// .scene1 {
+//     animation: fadeInAnimation ease 3s;
+//     animation-iteration-count: 1;
+//     animation-fill-mode: forwards;
+// }
+
+.chara {
+    animation: fadeIn 5s;
+    object-fit: cover;
+    object-position: 0 -330px;
+    height: 680px;
+}
+
+// @keyframes fadeInAnimation {
+//     0% {
+//         opacity: 0;
+//     }
+
+//     100% {
+//         opacity: 1;
+//     }
+// }

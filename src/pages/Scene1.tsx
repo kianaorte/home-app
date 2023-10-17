@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import { DialogueBox } from "../components/DialogueBox";
 
+import kianasprite from '../assets/images/characters/kiana sprite.gif'
+
+import './Scene1.scss';
+import { useNavigate } from "react-router-dom";
+
 const welcomeDialogue = [{
     text: 'Happy birthday my sweetie baby!'
 },
@@ -9,7 +14,7 @@ const welcomeDialogue = [{
 
 },
 {
-    text: "Since you're an old man now, I decided to make you something super fun so you can feel young again..."
+    text: "Since you're an old man now, I decided to make you something super fun so you can feel YOUNG again..."
 
 },
 {
@@ -37,23 +42,33 @@ const welcomeDialogue = [{
 ]
 
 export const Scene1 = () => {
+    const navigate = useNavigate();
     const [visible, setVisible] = useState(true);
     const [text, setText] = useState(welcomeDialogue[0].text);
     const [count, setCount] = useState(0);
     const removeElement = () => {
-        setVisible(false);
-        setCount(count + 1);
+        if (count !== welcomeDialogue.length) {
+
+            setVisible(false);
+            setCount(count + 1);
+        }
+        else {
+            navigate('/scene2');
+        }
     };
     useEffect(() => {
         setText(welcomeDialogue[count]?.text);
         setVisible(true);
     }, [text, count],);
     return (
-        <div onClick={removeElement}>
+        <>
             {visible && (
-                <DialogueBox text={text} />
+                <div className="scene1" onClick={removeElement}>
+                    <DialogueBox text={text} />
+                    <img src={kianasprite} alt="kiana" className="chara" width="90%" />
+                </div>
             )}
-        </div>
+        </>
     );
 };
 
