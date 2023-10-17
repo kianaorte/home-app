@@ -3,12 +3,15 @@ import { Options } from "../components/Options";
 const roomOptions = [
     {
         text: 'Bathroom',
+        link: '/bathroom'
     },
     {
-        text: 'Bedroom'
+        text: 'Bedroom',
+        link: '/bedroom'
     },
     {
-        text: 'Living Room'
+        text: 'Living Room',
+        link: '/livingroom'
     }
 ]
 

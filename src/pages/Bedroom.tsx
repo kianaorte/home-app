@@ -1,14 +1,13 @@
-import bedroomBg from '../assets/images/backgrounds/BedroomBg.png';
-import gamingPc from '../assets/images/backgrounds/GamingPc.png';
+
+import { BRoom } from "../components/BRoom";
+
 
 const Bedroom = () => {
-    <div>
-        <img src={bedroomBg} alt='bedroom' />
-        <img src={gamingPc} alt='setup' />
-
-    </div>
-
-
+    return (
+        <div>
+            <BRoom />
+        </div>
+    );
 };
 
 

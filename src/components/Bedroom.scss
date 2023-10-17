@@ -1,0 +1,24 @@
+.bedroom-container {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../assets/images/backgrounds/bedroom/BedroomBg.png);
+    background-size: cover;
+    border: 2px solid #e9385a;
+    align-items: center;
+    justify-content: center;
+}
+
+.bedroom-items {
+
+    // TODO: fix hover
+    :hover {
+        color: #111;
+        background: greenyellow;
+        box-shadow: 0 0 100px greenyellow;
+    }
+
+    position: absolute;
+    z-index: 2;
+}
