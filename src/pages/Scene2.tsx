@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { DialogueBox } from "../components/DialogueBox";
 
 import kianasprite from '../assets/images/characters/kiana sprite.gif'
+import './Scene2.scss';
+
 
 const instructionsDialogue = [{
     text: 'Welcome Home!'
@@ -43,9 +45,9 @@ const Scene2 = () => {
             {visible && (
                 <div className="scene2" onClick={removeElement}>
                     <DialogueBox text={text} />
-                    <img src={kianasprite} alt="kiana" className="chara" width="90%" />
                 </div>
             )}
+            <img src={kianasprite} alt="kiana" className="chara-walk" width="30%" />
         </>
     );
 }
