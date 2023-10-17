@@ -6,12 +6,15 @@ import { useNavigate } from 'react-router-dom';
 export const SettingsOverlay = (props: any) => {
     const { sendToParent } = props;
     const navigate = useNavigate();
+
     const navigateHome = () => {
         sendToParent(false);
+        console.log('navigate home: ' + sendToParent);
         navigate('/');
     }
     const closeOverlay = () => {
         sendToParent(false);
+        console.log('close overlay: ' + sendToParent);
     }
 
     return (

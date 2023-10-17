@@ -24,8 +24,8 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding-left: 220px;
-    padding-right: 100px;
+    margin-left: 220px;
+    margin-right: 100px;
     z-index: 1;
 }
 
@@ -37,8 +37,8 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding-left: 300px;
-    padding-right: 100px;
+    margin-left: 300px;
+    margin-right: 100px;
     z-index: 1;
 }
 
@@ -47,7 +47,7 @@
     font-size: 2.5vw;
     position: absolute;
     top: 4.5vw;
-    left: 18.5vw;
+    // left: 18.5vw;
     z-index: 1;
 }
 
@@ -56,6 +56,6 @@
     font-size: 2.5vw;
     position: absolute;
     top: 4.5vw;
-    left: 24.5vw;
+    // left: 24.5vw;
     z-index: 1;
 }
