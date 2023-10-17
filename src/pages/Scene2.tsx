@@ -4,6 +4,7 @@ import { DialogueBox } from "../components/DialogueBox";
 
 import kianasprite from '../assets/images/characters/kiana sprite.gif'
 import './Scene2.scss';
+import { Options } from "../components/Options";
 
 
 const instructionsDialogue = [{
@@ -19,18 +20,37 @@ const instructionsDialogue = [{
 },
 {
     text: "I don't think you need me to explain how to explore so I'll just leave you to it.."
-}];
+},
+{
+    text: "Which room do you want to start in first?"
+}
+];
+
+const roomOptions = [
+    {
+        text: 'Bathroom',
+    },
+    {
+        text: 'Bedroom'
+    },
+    {
+        text: 'Living Room'
+    }
+]
 
 const Scene2 = () => {
     const navigate = useNavigate();
     const [visible, setVisible] = useState(true);
+    const [options, setOptions] = useState(false);
     const [text, setText] = useState(instructionsDialogue[0].text);
     const [count, setCount] = useState(0);
     const removeElement = () => {
         if (count !== instructionsDialogue.length - 1) {
-
             setVisible(false);
             setCount(count + 1);
+        }
+        else if (count === instructionsDialogue.length - 1) {
+            setOptions(true);
         }
         else {
             navigate('/scene3');
@@ -48,6 +68,13 @@ const Scene2 = () => {
                 </div>
             )}
             <img src={kianasprite} alt="kiana" className="chara-walk" width="30%" />
+            {
+                options && (
+                    <div>
+                        <Options selectableOptions={roomOptions} />
+                    </div>
+                )
+            }
         </>
     );
 }

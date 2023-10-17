@@ -1,15 +1,15 @@
 .chara-walk {
-    animation: mini 8s;
-    -webkit-animation: moveChara 4s;
+    animation: moveChara 8s;
+    -webkit-animation: moveChara 8s;
     animation-iteration-count: 1;
 }
 
 @keyframes moveChara {
     0% {
-        transform: translateX(0);
+        transform: translateX(-200%);
     }
 
-    100% {
-        transform: translateX(100%);
+    30% {
+        transform: translateX(30%);
     }
 }

@@ -1,0 +1,25 @@
+.options-container {
+    display: flex;
+    position: absolute;
+    margin-left: -280px;
+    left: 20%;
+    top: 55%;
+}
+
+.options-card {
+    display: flex;
+    padding: 10px;
+    z-index: 50;
+    justify-content: flex-start;
+
+    :hover {
+        filter: drop-shadow(0 0 0.75rem rgb(198, 116, 237));
+    }
+}
+
+.options-text {
+    margin-left: 50px;
+    font-size: 3vw;
+    position: absolute;
+    font-family: Straightfont-Regular;
+}

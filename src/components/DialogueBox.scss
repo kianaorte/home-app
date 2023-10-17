@@ -1,12 +1,12 @@
 .container {
     position: absolute;
     margin-left: -250px;
-    left: 20%;
+    left: 18%;
     bottom: 0px;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    z-index: 50;
+    z-index: 2;
 }
 
 @keyframes fadeInAnimation {
