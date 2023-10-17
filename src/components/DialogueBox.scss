@@ -1,16 +1,22 @@
-// .container {
-//     position: relative;
-//     overflow: hidden;
-//     text-overflow: clip;
-//     width: 100%;
-// }
-
 .container {
     position: absolute;
     margin-left: -250px;
-    /* very important for the image to be centered */
-    left: 20%;
+    left: 18%;
     bottom: 0px;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .text {
@@ -18,4 +24,5 @@
     position: absolute;
     top: -1vw;
     left: 3vw;
+    font-family: Straightfont-Regular;
 }

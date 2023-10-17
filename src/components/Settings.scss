@@ -1,0 +1,17 @@
+.settings-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+    :hover {
+        filter: drop-shadow(0 0 1rem rgb(160, 0, 210));
+    }
+}
+
+.icon {
+    align-items: end;
+    width: 60%;
+    z-index: 3;
+}

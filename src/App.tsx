@@ -1,26 +1,23 @@
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { Button } from './components/Button';
+import { Settings } from './components/Settings';
 import Home from './pages/Home';
 import Scene1 from './pages/Scene1';
+import Scene2 from './pages/Scene2';
+import Scene3 from './pages/Scene3';
 
 function App() {
   return (
     <div className="App">
       <div className='background-container'>
-        {/* <div>
-          <h1 className='title'>Home!</h1>
-
-        </div> */}
-
         <Router>
-          <Button text="hello" link="/scene1" />
-          <div>
-            <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/scene1" element={<Scene1 />} />
-            </Routes>
-          </div>
+          <Settings />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/scene1" element={<Scene1 />} />
+            <Route path="/scene2" element={<Scene2 />} />
+            <Route path="/scene3" element={<Scene3 />} />
+          </Routes>
         </Router>
       </div>
     </div>

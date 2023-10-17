@@ -22,3 +22,10 @@ code {
     url("./fonts/HomeFont.ttf") format("truetype");
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "Straightfont-Regular";
+  src: local("Straightfont-Regular"),
+    url("./fonts/Straightfont-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
