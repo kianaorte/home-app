@@ -10,5 +10,4 @@ const Bedroom = () => {
     );
 };
 
-
 export default Bedroom;

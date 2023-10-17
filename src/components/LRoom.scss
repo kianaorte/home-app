@@ -1,0 +1,17 @@
+.lroom-container {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../assets/images/backgrounds/livingroom/LivingKitchenBg.png);
+    background-size: cover;
+    border: 2px solid #e9385a;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.lroom-items {
+    position: absolute;
+    z-index: 2;
+}
