@@ -43,12 +43,11 @@ const welcomeDialogue = [{
 
 export const Scene1 = () => {
     const navigate = useNavigate();
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
     const [text, setText] = useState(welcomeDialogue[0].text);
     const [count, setCount] = useState(0);
     const removeElement = () => {
-        if (count !== welcomeDialogue.length) {
-
+        if (count !== welcomeDialogue.length - 1) {
             setVisible(false);
             setCount(count + 1);
         }
@@ -65,9 +64,9 @@ export const Scene1 = () => {
             {visible && (
                 <div className="scene1" onClick={removeElement}>
                     <DialogueBox text={text} />
-                    <img src={kianasprite} alt="kiana" className="chara" width="90%" />
                 </div>
             )}
+            <img src={kianasprite} alt="kiana" className="chara" width="90%" />
         </>
     );
 };
