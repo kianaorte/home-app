@@ -1,24 +1,15 @@
+import { DialogueBox } from "../components/DialogueBox";
 import { Options } from "../components/Options";
 
-const roomOptions = [
-    {
-        text: 'Bathroom',
-        link: '/bathroom'
-    },
-    {
-        text: 'Bedroom',
-        link: '/bedroom'
-    },
-    {
-        text: 'Living Room',
-        link: '/livingroom'
-    }
-]
+const roomOptions =
+{
+    text: 'Bathroom',
+};
 
 const Scene2 = () => {
     return (
-
-        <Options selectableOptions={roomOptions} />
+        <DialogueBox text={roomOptions.text} />
+        // <Options selectableOptions={roomOptions} />
     );
 }
 

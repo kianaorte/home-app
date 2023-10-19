@@ -20,6 +20,7 @@ export const SettingsOverlay = (props: any) => {
     return (
         <div className='overlay-container'>
             <img src={popUpContainer} alt="popUp" className='popup' />
+            <h1 className='title'>Paused</h1>
             <div className='bluebtn-container' onClick={closeOverlay}>
                 <img src={BlueBtn} alt='btn' width='130%' />
                 <h1 className='settingstext'>Back to Game</h1>
