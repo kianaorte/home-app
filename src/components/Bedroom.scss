@@ -10,15 +10,53 @@
     justify-content: center;
 }
 
-.bedroom-items {
-
-    // TODO: fix hover
-    :hover {
-        color: #111;
-        background: greenyellow;
-        box-shadow: 0 0 100px greenyellow;
-    }
-
+.door {
     position: absolute;
-    z-index: 2;
+    top: 130px;
+    left: 70px;
 }
+
+.bed {
+    position: absolute;
+    top: 180px;
+    left: 500px;
+}
+
+.photoboard {
+    position: absolute;
+    top: 90px;
+    right: 250px;
+}
+
+.gaming-setup {
+    position: absolute;
+    top: 50;
+    right: 0;
+}
+
+.door:hover,
+.photoboard:hover,
+.gaming-setup:hover,
+.bed:hover {
+    box-shadow: 0 0 100px rgb(129, 41, 253);
+}
+
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 100%;
+//     opacity: 0;
+//     transition: .5s ease;
+//     background-color: #008CBA;
+// }
+
+// // .door:hover,
+// // .photoboard:hover,
+// // .gaming-setup:hover,
+// .bedroom-container .overlay {
+//     opacity: 1;
+// }
