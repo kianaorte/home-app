@@ -16,7 +16,7 @@ export const LRoom = () => {
             <img src={couch} alt='couch' width='100%' className='lroom-items' />
             <img src={catTree} alt='catTree' width='100%' className='lroom-items' />
             <img src={diningChairs} alt='diningChairs' width='100%' className='lroom-items' />
-            <img src={diningTable} alt='diningTable' width='100%' className='lroom-items' />
+            <img src={diningTable} alt='diningTable' width='100%' className='dining-table' />
             <img src={boardgames} alt='boardgames' width='100%' className='lroom-items' />
             <img src={monopoly} alt='monopoly' width='100%' className='lroom-items' />
             <img src={tv} alt='tv' width='100%' className='lroom-items' />

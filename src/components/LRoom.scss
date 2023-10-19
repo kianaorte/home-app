@@ -13,5 +13,10 @@
 
 .lroom-items {
     position: absolute;
+    z-index: 3;
+}
+
+.dining-table {
+    position: absolute;
     z-index: 2;
 }
