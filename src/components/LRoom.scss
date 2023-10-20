@@ -73,9 +73,6 @@
 .board-games:hover,
 .monopoly:hover,
 .tv:hover {
-    // -webkit-filter: blur(100%);
-    /* Chrome, Safari, Opera */
-    // filter: blur(4px);
-    background-color: #2574d3b6;
-    box-shadow: 0 0 5px 10px #2574d3b6;
+    -webkit-filter: drop-shadow(5px 5px 5px #2574d3b6);
+    filter: drop-shadow(0 0 1rem #ecff1cb6);
 }
