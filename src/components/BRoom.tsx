@@ -7,6 +7,8 @@ import photoboard from '../assets/images/backgrounds/bedroom/PhotoBoard.png';
 import pc from '../assets/images/backgrounds/bedroom/pc.png';
 import { ItemOverlay } from './ItemOverlay';
 import { useState } from 'react';
+import { Options } from './Options';
+import { DialogueBox } from './DialogueBox';
 
 const bedroomItems = [{
     item: 'Bed',
@@ -22,8 +24,23 @@ const bedroomItems = [{
 },
 ]
 
+const roomOptions = [
+    {
+        text: 'Bathroom',
+        link: '/bathroom'
+    },
+    {
+        text: 'Bedroom',
+        link: '/bedroom'
+    },
+    {
+        text: 'Living Room',
+        link: '/livingroom'
+    }
+]
 
 export const BRoom = () => {
+    const [openDoor, setOpenDoor] = useState(false);
     const [openItemOverlay, setItemOverlay] = useState(false);
     const [item, setItem] = useState('');
 
@@ -34,7 +51,7 @@ export const BRoom = () => {
 
     return (
         <div className='bedroom-container'>
-            <img src={door} alt='door' width='12%' className='door' />
+            <img src={door} alt='door' width='12%' className='door' onClick={() => setOpenDoor(true)} />
             <img src={bed} alt='bed' width='40%' className='bed' onClick={() => handleClick('bed')} />
             <img src={photoboard} alt='photos' width='12%' className='photoboard' onClick={() => handleClick('photoboard')} />
             <img src={pc} alt='setup' width='18%' className='gaming-setup' onClick={() => handleClick('setup')} />
@@ -52,6 +69,15 @@ export const BRoom = () => {
             {
                 openItemOverlay && item === 'setup' && (
                     <ItemOverlay item={bedroomItems[2].item} description={bedroomItems[2].description} sendToParent={setItemOverlay} />
+                )
+            }
+
+            {
+                openDoor && (
+                    <>
+                        <DialogueBox text='Which room would you like to go to?' />
+                        <Options selectableOptions={roomOptions} />
+                    </>
                 )
             }
         </div>
