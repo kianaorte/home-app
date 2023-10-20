@@ -1,19 +1,43 @@
+.overlay-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.yeehaw {
+    display: flex;
+    justify-content: center;
+}
+
 .subtitle {
     position: absolute;
     top: 25%;
     font-size: 60px;
+    width: 600px;
 }
+
+.para {
+    position: absolute;
+    top: 40%;
+    font-size: 2rem;
+    width: 670px;
+}
+
 
 .bluebtn-close {
     position: absolute;
     top: 80%;
-    // left: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    // margin-left: 220px;
-    // margin-right: 100px;
     z-index: 1;
 }
 
