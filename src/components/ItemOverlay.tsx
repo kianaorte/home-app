@@ -10,10 +10,7 @@ export const ItemOverlay = (props: { item: string, description: string[], sendTo
 
     const closeOverlay = () => {
         sendToParent(false);
-        console.log('close overlay: ' + sendToParent);
     }
-    console.log('itemname: ' + itemName);
-    console.log('desc: ' + description);
 
     return (
         <div className='overlay-container'>

@@ -9,12 +9,10 @@ export const SettingsOverlay = (props: any) => {
 
     const navigateHome = () => {
         sendToParent(false);
-        console.log('navigate home: ' + sendToParent);
         navigate('/');
     }
     const closeOverlay = () => {
         sendToParent(false);
-        console.log('close overlay: ' + sendToParent);
     }
 
     return (

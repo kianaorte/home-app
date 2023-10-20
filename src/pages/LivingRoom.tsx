@@ -30,20 +30,14 @@ export const LivingRoom = () => {
     const [count, setCount] = useState(0);
     const [speaking, setSpeaking] = useState(true);
     const removeElement = () => {
-        if (count !== livingDialogue.length - 1) {
-            setVisible(false);
-            setCount(count + 1);
-        }
-        else {
-            // after talking hide noob sprite and let explore
-        }
+        setVisible(false);
+        setCount(count + 1);
+
     };
     useEffect(() => {
         setText(livingDialogue[count]?.text);
         setVisible(true);
-        console.log('count: ' + count + ' arraylength: ' + livingDialogue.length);
         if (count === livingDialogue.length - 1) {
-            console.log(speaking);
             setSpeaking(false);
             setVisible(false);
         }
