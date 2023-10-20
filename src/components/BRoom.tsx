@@ -20,7 +20,6 @@ const bedroomItems = [{
     item: 'Gaming setup',
     description: ["Sheesh, it's bbs pro gamer setup. ", "When ur not busy clicking heads in valo ur either watching best boi soju or other random games ur currently fixated on   ",]
 },
-
 ]
 
 
