@@ -11,13 +11,19 @@
     z-index: 1;
 }
 
-.lroom-items {
-    position: absolute;
-    z-index: 3;
-}
+
 
 .dining-table {
     position: absolute;
+    bottom: 0px;
+    left: 60px;
+    z-index: 2;
+}
+
+.dining-chairs {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
     z-index: 2;
 }
 
@@ -42,7 +48,7 @@
 .board-games {
     position: absolute;
     top: 430px;
-    left: 530px;
+    left: 460px;
     z-index: 2;
 }
 
@@ -58,4 +64,18 @@
     top: 170px;
     left: 345px;
     z-index: 2;
+}
+
+
+.balcony:hover,
+.couch:hover,
+.cat-tree:hover,
+.board-games:hover,
+.monopoly:hover,
+.tv:hover {
+    // -webkit-filter: blur(100%);
+    /* Chrome, Safari, Opera */
+    // filter: blur(4px);
+    background-color: #2574d3b6;
+    box-shadow: 0 0 5px 10px #2574d3b6;
 }

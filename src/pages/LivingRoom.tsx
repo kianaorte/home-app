@@ -28,6 +28,7 @@ export const LivingRoom = () => {
     const [visible, setVisible] = useState(false);
     const [text, setText] = useState(livingDialogue[0].text);
     const [count, setCount] = useState(0);
+    const [speaking, setSpeaking] = useState(true);
     const removeElement = () => {
         if (count !== livingDialogue.length - 1) {
             setVisible(false);
@@ -40,7 +41,13 @@ export const LivingRoom = () => {
     useEffect(() => {
         setText(livingDialogue[count]?.text);
         setVisible(true);
-    }, [text, count],);
+        console.log('count: ' + count + ' arraylength: ' + livingDialogue.length);
+        if (count === livingDialogue.length - 1) {
+            console.log(speaking);
+            setSpeaking(false);
+            setVisible(false);
+        }
+    }, [text, count, speaking],);
     return (
         <>
             {visible && (
@@ -48,8 +55,8 @@ export const LivingRoom = () => {
                     <DialogueBox text={text} />
                 </div>
             )}
+            {speaking && (<img src={kianasprite} className="speaking-noob" alt="kiana" width="40%" />)}
             <LRoom />
-            <img src={kianasprite} className="speaking-noob" alt="kiana" width="40%" />
         </>
     );
 };
