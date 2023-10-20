@@ -1,5 +1,4 @@
 import { DialogueBox } from "../components/DialogueBox";
-import { Options } from "../components/Options";
 
 const roomOptions =
 {

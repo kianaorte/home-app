@@ -20,3 +20,42 @@
     position: absolute;
     z-index: 2;
 }
+
+.balcony {
+    position: absolute;
+    top: 50px;
+    right: 317px;
+}
+
+.couch {
+    position: absolute;
+    top: 175px;
+    right: 100px;
+}
+
+.cat-tree {
+    position: absolute;
+    top: 90px;
+    right: -1px
+}
+
+.board-games {
+    position: absolute;
+    top: 430px;
+    left: 530px;
+    z-index: 2;
+}
+
+.monopoly {
+    position: absolute;
+    top: 520px;
+    left: 480px;
+    z-index: 2;
+}
+
+.tv {
+    position: absolute;
+    top: 170px;
+    left: 345px;
+    z-index: 2;
+}

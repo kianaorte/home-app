@@ -12,14 +12,14 @@ import tv from '../assets/images/backgrounds/livingroom/Tv.png'
 export const LRoom = () => {
     return (
         <div className='lroom-container'>
-            <img src={balcony} alt='balcony' width='100%' />
-            <img src={couch} alt='couch' width='100%' className='lroom-items' />
-            <img src={catTree} alt='catTree' width='100%' className='lroom-items' />
+            <img src={balcony} alt='balcony' width='38%' className='balcony' />
+            <img src={couch} alt='couch' width='35%' className='couch' />
+            <img src={catTree} alt='catTree' width='13%' className='cat-tree' />
             <img src={diningChairs} alt='diningChairs' width='100%' className='lroom-items' />
             <img src={diningTable} alt='diningTable' width='100%' className='dining-table' />
-            <img src={boardgames} alt='boardgames' width='100%' className='lroom-items' />
-            <img src={monopoly} alt='monopoly' width='100%' className='lroom-items' />
-            <img src={tv} alt='tv' width='100%' className='lroom-items' />
+            <img src={boardgames} alt='boardgames' width='10%' className='board-games' />
+            <img src={monopoly} alt='monopoly' width='10%' className='monopoly' />
+            <img src={tv} alt='tv' width='10%' className='tv' />
         </div>
     )
 };
