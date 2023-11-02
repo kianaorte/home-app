@@ -74,7 +74,7 @@ const Scene2 = () => {
             {
                 options && (
                     <div>
-                        <Options selectableOptions={roomOptions} />
+                        <Options selectableOptions={roomOptions} sendToParent={null} />
                     </div>
                 )
             }

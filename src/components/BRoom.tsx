@@ -76,7 +76,7 @@ export const BRoom = () => {
                 openDoor && (
                     <>
                         <DialogueBox text='Which room would you like to go to?' />
-                        <Options selectableOptions={roomOptions} />
+                        <Options selectableOptions={roomOptions} sendToParent={setOpenDoor} />
                     </>
                 )
             }

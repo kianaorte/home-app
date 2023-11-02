@@ -2,19 +2,13 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import optionCard from '../assets/images/others/ReplyBtn.png';
 import './Options.scss';
 
-
-interface OptionArrayProp {
+export const Options = (props: {
     selectableOptions: {
         text: string,
         link?: string | undefined
-    }[];
-};
-
-export const Options = ({ selectableOptions }: OptionArrayProp) => {
-
+    }[], sendToParent: any
+}) => {
     const location = useLocation();
-    // const checkPath = text.toLowerCase() === location.pathname;
-
     const navigator = useNavigate();
     const navTo = (link: string | undefined) => {
         if (link) {
@@ -23,22 +17,19 @@ export const Options = ({ selectableOptions }: OptionArrayProp) => {
     }
     return (
         <div className='options-container'>
-            {selectableOptions.map((option, index) => {
+            {props.selectableOptions.map((option, index) => {
                 const checkPath = option.link === location.pathname;
-                console.log(checkPath);
-
                 return (
                     <>
                         {
-                            checkPath ? <div className="options-card" key={index}>
+                            checkPath ? <div className="options-card" key={index} onClick={() => props.sendToParent(false)}>
                                 <img src={optionCard} alt='option' />
-                                <p className="options-text">Already in this room!!</p>
+                                <p className="options-text">Already here!! Click to close</p>
                             </div> : <div className="options-card" key={index} onClick={() => navTo(option.link)}>
                                 <img src={optionCard} alt='option' />
                                 <p className="options-text">{option.text}</p>
                             </div>
                         }
-
                     </>
                 )
             })}
