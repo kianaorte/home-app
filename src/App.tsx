@@ -7,6 +7,7 @@ import Scene2 from './pages/Scene2';
 import Scene3 from './pages/Scene3';
 import Bedroom from './pages/Bedroom';
 import LivingRoom from './pages/LivingRoom';
+import Bathroom from './pages/Bathroom';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/scene3" element={<Scene3 />} />
             <Route path="/bedroom" element={<Bedroom />} />
             <Route path="/livingroom" element={<LivingRoom />} />
+            <Route path="/bathroom" element={<Bathroom />} />
           </Routes>
         </Router>
       </div>

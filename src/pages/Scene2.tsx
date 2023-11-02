@@ -19,7 +19,7 @@ const instructionsDialogue = [{
 
 },
 {
-    text: "I don't think you need me to explain how to explore so I'll just leave you to it.."
+    text: "You're a pro-gamer so I'm sure you can figure this out and now I'll just leave you to it.."
 },
 {
     text: "Which room do you want to start in first?"

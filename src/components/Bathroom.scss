@@ -1,0 +1,54 @@
+.bathroom-container {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../assets/images/backgrounds/bathroom/Bathroombg.png);
+    background-size: cover;
+    border: 2px solid #e9385a;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.catLitter {
+    position: absolute;
+    top: 510px;
+    left: 180px;
+    z-index: 3;
+}
+
+.floormat {
+    position: absolute;
+    top: 700px;
+    left: 40px;
+    z-index: 3;
+}
+
+.shower {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.toilet {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+}
+
+.towelRack {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
+
+.catLitter:hover,
+.floormat:hover,
+.shower:hover,
+.toilet:hover,
+.towelRack:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #2574d3b6);
+    filter: drop-shadow(0 0 1rem #ecff1cb6);
+}
