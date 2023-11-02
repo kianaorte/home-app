@@ -17,46 +17,49 @@
     position: absolute;
     bottom: 0px;
     left: 60px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .dining-chairs {
     position: absolute;
     bottom: 40px;
     left: 100px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .balcony {
     position: absolute;
     top: 50px;
     right: 317px;
+    z-index: 2;
 }
 
 .couch {
     position: absolute;
     top: 175px;
     right: 100px;
+    z-index: 3;
 }
 
 .cat-tree {
     position: absolute;
     top: 90px;
-    right: -1px
+    right: -1px;
+    z-index: 3;
 }
 
 .board-games {
     position: absolute;
     top: 430px;
     left: 460px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .monopoly {
     position: absolute;
     top: 520px;
     left: 480px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .tv {
@@ -66,13 +69,17 @@
     z-index: 2;
 }
 
+.exit {
+    z-index: 1;
+}
 
 .balcony:hover,
 .couch:hover,
 .cat-tree:hover,
 .board-games:hover,
 .monopoly:hover,
-.tv:hover {
+.tv:hover,
+.exit:hover {
     -webkit-filter: drop-shadow(5px 5px 5px #2574d3b6);
     filter: drop-shadow(0 0 1rem #ecff1cb6);
 }
