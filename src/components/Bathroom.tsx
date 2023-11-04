@@ -66,28 +66,20 @@ export const Bathroom = () => {
                 )
             }
             {
-                openItemOverlay && item === 'floormat' && (
+                openItemOverlay && item === 'shower' && (
                     <ItemOverlay item={bathroomItems[1].item} description={bathroomItems[1].description} sendToParent={setItemOverlay} />
                 )
             }
             {
-                openItemOverlay && item === 'shower' && (
+                openItemOverlay && item === 'toilet' && (
                     <ItemOverlay item={bathroomItems[2].item} description={bathroomItems[2].description} sendToParent={setItemOverlay} />
                 )
             }
             {
-                openItemOverlay && item === 'toilet' && (
+                openItemOverlay && item === 'towelRack' && (
                     <ItemOverlay item={bathroomItems[3].item} description={bathroomItems[3].description} sendToParent={setItemOverlay} />
                 )
             }
-            {
-                openItemOverlay && item === 'towelRack' && (
-                    <ItemOverlay item={bathroomItems[4].item} description={bathroomItems[4].description} sendToParent={setItemOverlay} />
-                )
-            }
-
-
-
             {
                 openDoor && (
                     <>

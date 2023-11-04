@@ -64,13 +64,13 @@ const Scene2 = () => {
         setVisible(true);
     }, [text, count],);
     return (
-        <>
+        <div className="scene2-container">
             {visible && (
                 <div className="scene2" onClick={removeElement}>
                     <DialogueBox text={text} />
                 </div>
             )}
-            <img src={kianasprite} alt="kiana" className="chara-walk" width="30%" />
+            <img src={kianasprite} alt="kiana" className="chara-walk" width="45%" />
             {
                 options && (
                     <div>
@@ -78,7 +78,7 @@ const Scene2 = () => {
                     </div>
                 )
             }
-        </>
+        </div>
     );
 }
 
