@@ -50,15 +50,15 @@
 
 .board-games {
     position: absolute;
-    top: 430px;
-    left: 460px;
+    top: 400px;
+    left: 400px;
     z-index: 3;
 }
 
 .monopoly {
     position: absolute;
-    top: 520px;
-    left: 480px;
+    bottom: 100px;
+    left: 350px;
     z-index: 3;
 }
 
@@ -71,6 +71,13 @@
 
 .exit {
     z-index: 1;
+}
+
+.qr {
+    position: absolute;
+    top: 200px;
+    right: 350px;
+    z-index: 6;
 }
 
 .balcony:hover,

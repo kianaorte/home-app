@@ -5,6 +5,9 @@ import floormat from '../assets/images/backgrounds/bathroom/floormat.png'
 import shower from '../assets/images/backgrounds/bathroom/shower.png'
 import toilet from '../assets/images/backgrounds/bathroom/toilet.png'
 import towelRack from '../assets/images/backgrounds/bathroom/towelrack.png'
+
+import seven from '../assets/qrcodes/SevenQr.png';
+
 import { useState } from 'react'
 import { DialogueBox } from './DialogueBox'
 import { ItemOverlay } from './ItemOverlay'
@@ -20,11 +23,11 @@ const bathroomItems = [{
 },
 {
     item: 'Toilet',
-    description: ['here is where my baby drops bombs and then I have to wait 30 mins for it to air out before I can use it']
+    description: ['here is where my baby drops bombs and then I have to wait 30 mins for it to air out before I can use it. I give cutie a coupon that makes me clean the toilet. Its my most hated chore... ']
 },
 {
     item: 'Towel Rack',
-    description: ['Idk why but cutie never wants to hang his towel here saadge']
+    description: ['Idk why but cutie never wants to hang his towel here saadge. If you ever need me to do the laundry, use this coupon!']
 }
 ];
 
@@ -67,7 +70,10 @@ export const Bathroom = () => {
             }
             {
                 openItemOverlay && item === 'shower' && (
-                    <ItemOverlay item={bathroomItems[1].item} description={bathroomItems[1].description} sendToParent={setItemOverlay} />
+                    <>
+                        <ItemOverlay item={bathroomItems[1].item} description={bathroomItems[1].description} sendToParent={setItemOverlay} />
+                        <img src={seven} alt="betterQr" width="10%" className='qr' />
+                    </>
                 )
             }
             {

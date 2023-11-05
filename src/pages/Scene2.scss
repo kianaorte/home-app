@@ -10,11 +10,31 @@
     }
 
     30% {
-        transform: translateX(30%);
+        transform: translateX(10%);
     }
 }
 
 .scene2-container {
     background-image: url('../assets/images/backgrounds/outside.png');
     background-size: cover;
+}
+
+.front-door {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    z-index: 2;
+}
+
+.neighbour-door {
+    position: absolute;
+    top: 249px;
+    z-index: 2;
+    right: 171px;
+}
+
+.front-door:hover,
+.neighbour-door:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #2574d3b6);
+    filter: drop-shadow(0 0 1rem #ecff1cb6);
 }

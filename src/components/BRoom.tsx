@@ -4,6 +4,10 @@ import door from '../assets/images/backgrounds/bedroom/door.png';
 import bed from '../assets/images/backgrounds/bedroom/Bed.png';
 import photoboard from '../assets/images/backgrounds/bedroom/PhotoBoard.png';
 
+import eepyQr from '../assets/qrcodes/EepyQr.png';
+import photoQr from '../assets/qrcodes/PhotoboardQr.png';
+import sojuQr from '../assets/qrcodes/SojuQr.png';
+
 import pc from '../assets/images/backgrounds/bedroom/pc.png';
 import { ItemOverlay } from './ItemOverlay';
 import { useState } from 'react';
@@ -58,17 +62,26 @@ export const BRoom = () => {
 
             {
                 openItemOverlay && item === 'bed' && (
-                    <ItemOverlay item={bedroomItems[0].item} description={bedroomItems[0].description} sendToParent={setItemOverlay} />
+                    <>
+                        <ItemOverlay item={bedroomItems[0].item} description={bedroomItems[0].description} sendToParent={setItemOverlay} />
+                        <img src={eepyQr} alt='eepy' width="10%" className='qr' />
+                    </>
                 )
             }
             {
                 openItemOverlay && item === 'photoboard' && (
-                    <ItemOverlay item={bedroomItems[1].item} description={bedroomItems[1].description} sendToParent={setItemOverlay} />
+                    <>
+                        <ItemOverlay item={bedroomItems[1].item} description={bedroomItems[1].description} sendToParent={setItemOverlay} />
+                        <img src={photoQr} alt='phqr' width="10%" className='qr' />
+                    </>
                 )
             }
             {
                 openItemOverlay && item === 'setup' && (
-                    <ItemOverlay item={bedroomItems[2].item} description={bedroomItems[2].description} sendToParent={setItemOverlay} />
+                    <>
+                        <ItemOverlay item={bedroomItems[2].item} description={bedroomItems[2].description} sendToParent={setItemOverlay} />
+                        <img src={sojuQr} alt='soju' width="10%" className='qr' />
+                    </>
                 )
             }
 

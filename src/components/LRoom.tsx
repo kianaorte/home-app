@@ -9,6 +9,9 @@ import diningTable from '../assets/images/backgrounds/livingroom/DiningTable.png
 import monopoly from '../assets/images/backgrounds/livingroom/Monopoly.png'
 import tv from '../assets/images/backgrounds/livingroom/Tv.png'
 import exit from '../assets/images/backgrounds/livingroom/exit.png';
+
+import BetterQr from '../assets/qrcodes/BetterQr.png';
+
 import { useState } from 'react';
 import { ItemOverlay } from './ItemOverlay';
 import { DialogueBox } from './DialogueBox';
@@ -17,7 +20,7 @@ import { Options } from './Options';
 
 const lroomItems = [{
     item: 'Balcony',
-    description: ["plants ", "egg chair",]
+    description: ["This is probably the place bb goes to the least in the entire house. After playing this game you should go up there...",]
 },
 {
     item: 'Couch',
@@ -97,7 +100,10 @@ export const LRoom = () => {
             }
             {
                 openItemOverlay && item === 'boardgames' && (
-                    <ItemOverlay item={lroomItems[3].item} description={lroomItems[3].description} sendToParent={setItemOverlay} />
+                    <>
+                        <ItemOverlay item={lroomItems[3].item} description={lroomItems[3].description} sendToParent={setItemOverlay} />
+                        <img src={BetterQr} alt="betterQr" width="10%" className='qr' />
+                    </>
                 )
             }
             {
