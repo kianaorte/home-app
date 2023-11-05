@@ -1,11 +1,11 @@
 
-import { BRoom } from "../components/BRoom";
+import { Bathroom } from "../components/Bathroom";
 
 
 const Bedroom = () => {
     return (
         <div>
-            <BRoom />
+            <Bathroom />
         </div>
     );
 };

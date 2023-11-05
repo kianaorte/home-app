@@ -1,0 +1,43 @@
+.bedroom-container {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../assets/images/backgrounds/bedroom/BedroomBg.png);
+    background-size: cover;
+    border: 2px solid #e9385a;
+    align-items: center;
+    justify-content: center;
+}
+
+.door {
+    position: absolute;
+    top: 130px;
+    left: 70px;
+}
+
+.bed {
+    position: absolute;
+    top: 180px;
+    left: 500px;
+}
+
+.photoboard {
+    position: absolute;
+    top: 90px;
+    right: 250px;
+}
+
+.gaming-setup {
+    position: absolute;
+    top: 50;
+    right: 0;
+}
+
+.door:hover,
+.photoboard:hover,
+.gaming-setup:hover,
+.bed:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #2574d3b6);
+    filter: drop-shadow(0 0 1rem #ecff1cb6);
+}

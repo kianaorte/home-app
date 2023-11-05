@@ -4,10 +4,9 @@ import './DialogueBox.scss'
 
 type DialogueProps = {
     text: string,
-    link?: string
 }
 
-export const DialogueBox = ({ text, link }: DialogueProps) => {
+export const DialogueBox = ({ text, }: DialogueProps) => {
     return (
         <div className='container' >
             <img src={DialogueContainer} width='100%' alt="box" />

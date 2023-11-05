@@ -1,0 +1,92 @@
+.lroom-container {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../assets/images/backgrounds/livingroom/LivingKitchenBg.png);
+    background-size: cover;
+    border: 2px solid #e9385a;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+
+.dining-table {
+    position: absolute;
+    bottom: 0px;
+    left: 60px;
+    z-index: 3;
+}
+
+.dining-chairs {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    z-index: 3;
+}
+
+.balcony {
+    position: absolute;
+    top: 50px;
+    right: 317px;
+    z-index: 2;
+}
+
+.couch {
+    position: absolute;
+    top: 175px;
+    right: 100px;
+    z-index: 3;
+}
+
+.cat-tree {
+    position: absolute;
+    top: 90px;
+    right: -1px;
+    z-index: 3;
+}
+
+.board-games {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    z-index: 3;
+}
+
+.monopoly {
+    position: absolute;
+    bottom: 100px;
+    left: 350px;
+    z-index: 3;
+}
+
+.tv {
+    position: absolute;
+    top: 170px;
+    left: 345px;
+    z-index: 2;
+}
+
+.exit {
+    z-index: 1;
+}
+
+.qr {
+    position: absolute;
+    top: 200px;
+    right: 350px;
+    z-index: 6;
+}
+
+.balcony:hover,
+.couch:hover,
+.cat-tree:hover,
+.board-games:hover,
+.monopoly:hover,
+.tv:hover,
+.exit:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #2574d3b6);
+    filter: drop-shadow(0 0 1rem #ecff1cb6);
+}

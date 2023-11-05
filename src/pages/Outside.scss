@@ -1,36 +1,22 @@
-.chara-walk {
-    animation: moveChara 8s;
-    -webkit-animation: moveChara 8s;
-    animation-iteration-count: 1;
-}
-
-@keyframes moveChara {
-    0% {
-        transform: translateX(-200%);
-    }
-
-    30% {
-        transform: translateX(10%);
-    }
-}
-
-.scene2-container {
+.outside-container {
     background-image: url('../assets/images/backgrounds/outside.png');
     background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .front-door {
     position: absolute;
-    top: 250px;
-    left: 500px;
+    top: 236px;
+    left: 470px;
     z-index: 2;
 }
 
 .neighbour-door {
     position: absolute;
-    top: 249px;
+    top: 235px;
+    right: 249px;
     z-index: 2;
-    right: 171px;
 }
 
 .front-door:hover,

@@ -1,0 +1,50 @@
+.overlay-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.yeehaw {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    position: absolute;
+    top: 25%;
+    font-size: 60px;
+    width: 600px;
+}
+
+.para {
+    position: absolute;
+    top: 40%;
+    font-size: 2rem;
+    width: 670px;
+}
+
+
+.bluebtn-close {
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.close-text {
+    color: black;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 1.7vw;
+    z-index: 1;
+}

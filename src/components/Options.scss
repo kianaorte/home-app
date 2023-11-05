@@ -1,14 +1,16 @@
 .options-container {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     margin-left: -280px;
     left: 20%;
-    top: 55%;
+    top: 20%;
+    justify-content: center;
 }
 
 .options-card {
     display: flex;
-    padding: 10px;
+    // padding: 1px;
     z-index: 50;
     justify-content: flex-start;
 

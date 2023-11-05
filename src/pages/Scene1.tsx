@@ -14,12 +14,17 @@ const welcomeDialogue = [{
 
 },
 {
-    text: "Since you're an old man now, I decided to make you something super fun so you can feel YOUNG again..."
+    text: "Since you're an old man now, I decided to make you something super fun so you can feel ..."
 
 },
 {
-    text: 'I made you a small interactive game!'
-
+    text: 'YOUNG again'
+},
+{
+    text: 'Since one of the first games we played together was that KFC and pigeon dating sim, I decided to make a game with a similar vibe hehehe'
+},
+{
+    text: "I wanted to give you something special so I custom made everything for your special day! "
 },
 {
     text: "I drew all the art and wrote all the code"
