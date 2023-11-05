@@ -9,7 +9,7 @@ export const End = () => {
                 <p>Happy birthday again my stinkey, favorite old man. I hope this new year treats you well and we can make more memories together</p>
                 <p>I hope you continue to be amazing at everything, gets ton of sleep and watch all the Soju streams. </p>
                 <p>I know no matter what you do, you'll excel at it but if you ever do struggle, I want you to know you can tell me anything and I'll be there for you</p>
-                <p>I love you the mostest my cootie patoobie </p>
+                <p>I love you the mostest my cootie patoobie ❤️</p>
                 <p>From Kiana </p>
 
                 <h2>Authors Notes:</h2>
