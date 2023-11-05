@@ -8,6 +8,8 @@ import Scene3 from './pages/Scene3';
 import Bedroom from './pages/Bedroom';
 import LivingRoom from './pages/LivingRoom';
 import Bathroom from './pages/Bathroom';
+import Outside from './pages/Outside';
+import End from './pages/End';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/bedroom" element={<Bedroom />} />
             <Route path="/livingroom" element={<LivingRoom />} />
             <Route path="/bathroom" element={<Bathroom />} />
+            <Route path="/outside" element={<Outside />} />
+            <Route path="/outside/end" element={<End />} />
           </Routes>
         </Router>
       </div>
