@@ -19,6 +19,9 @@ const instructionsDialogue = [{
     text: 'You bascially just click on things and see what happens'
 },
 {
+    text: "When you're done make sure you come back out here"
+},
+{
     text: "You're a pro-gamer so I'm sure you can figure this out and now I'll just leave you to it.."
 }
 ];
@@ -77,8 +80,8 @@ const Scene2 = () => {
                     <DialogueBox text={text} />
                 </div>
             )}
-            <img src={door} alt='main-door' className="front-door" width="9.05%" onClick={() => setOpenDoor(true)} />
-            <img src={neighbourDoor} alt='n-door' className="neighbour-door" width="9.05%" onClick={() => handleClick('door')} />
+            <img src={door} alt='main-door' className="sfront-door" width="9.05%" onClick={() => setOpenDoor(true)} />
+            <img src={neighbourDoor} alt='n-door' className="sneighbour-door" width="9.05%" onClick={() => handleClick('door')} />
             <img src={kianasprite} alt="kiana" className="chara-walk" width="45%" />
             {
                 openItemOverlay && item === 'door' && (

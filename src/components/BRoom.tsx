@@ -40,6 +40,10 @@ const roomOptions = [
     {
         text: 'Living Room',
         link: '/livingroom'
+    },
+    {
+        text: 'Outside',
+        link: '/outside'
     }
 ]
 

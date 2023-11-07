@@ -1,3 +1,5 @@
+import endQr from '../assets/qrcodes/EndQr.png'
+
 export const End = () => {
 
     return (
@@ -12,10 +14,13 @@ export const End = () => {
                 <p>I love you the mostest my cootie patoobie ❤️</p>
                 <p>From Kiana </p>
 
+                <img src={endQr} alt="qr" width="10%"></img>
+
                 <h2>Authors Notes:</h2>
                 <p>There were so many more features I wanted to add for you, like more QR codes and having Tanya in the game.</p>
                 <p>I really wanted to add in the cats and have an inventory for you to store your coupons but I didn't have time to implement those features 😭😭 </p>
                 <p>Next time I make a bigger and better game for my bb but this time i'll make sure I wont neglect you... 🥴</p>
+
             </div>
         </div>
     );

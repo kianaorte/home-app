@@ -11,6 +11,7 @@ import tv from '../assets/images/backgrounds/livingroom/Tv.png'
 import exit from '../assets/images/backgrounds/livingroom/exit.png';
 
 import BetterQr from '../assets/qrcodes/BetterQr.png';
+import CatQr from '../assets/qrcodes/CatQr.png';
 
 import { useState } from 'react';
 import { ItemOverlay } from './ItemOverlay';
@@ -56,6 +57,10 @@ const roomOptions = [
     {
         text: 'Living Room',
         link: '/livingroom'
+    },
+    {
+        text: 'Outside',
+        link: '/outside'
     }
 ]
 
@@ -95,7 +100,10 @@ export const LRoom = () => {
 
             {
                 openItemOverlay && item === 'cat-tree' && (
-                    <ItemOverlay item={lroomItems[2].item} description={lroomItems[2].description} sendToParent={setItemOverlay} />
+                    <>
+                        <ItemOverlay item={lroomItems[2].item} description={lroomItems[2].description} sendToParent={setItemOverlay} />
+                        <img src={CatQr} alt="betterQr" width="10%" className='qr' />
+                    </>
                 )
             }
             {
